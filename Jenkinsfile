@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven 3.8.1'  // Jenkinsで設定したMavenの名前
-        jdk 'JDK 17'  // Jenkinsで設定したJDKの名前
+        maven 'Maven3.8.1'  // Jenkinsで設定したMavenの名前
+        jdk 'JDK17'  // Jenkinsで設定したJDKの名前
     }
     stages {
         stage('Checkout') {
