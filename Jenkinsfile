@@ -1,9 +1,9 @@
 pipeline {
-    agent {
-        docker {
-            image 'my-maven-jdk-image:1.0'
-        }
+agent {
+    docker {
+        image 'fujimon1004/my-maven-jdk-image:1.0'
     }
+}
     stages {
         stage('Checkout') {
             steps {
