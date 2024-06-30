@@ -1,8 +1,8 @@
 pipeline {
-    agent any
-    tools {
-        maven 'Maven3.8.1'  // Jenkinsで設定したMavenの名前
-        jdk 'JDK17'  // Jenkinsで設定したJDKの名前
+    agent {
+        docker {
+            image 'my-maven-jdk-image:1.0'
+        }
     }
     stages {
         stage('Checkout') {
